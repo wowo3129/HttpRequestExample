@@ -1,11 +1,14 @@
-## 对于有多种可替代解决方案的业务逻辑，提供一种快速更换的思路
+## 对于有多种 可替代解决方案 的业务逻辑，提供一种快速更换的思路
 
 ### 什么是"有多种可替代解决方案的业务逻辑"?
 #### 举几个例子说明：
 
 客户端的http请求操作，可以实现的方案有Retrofix、OkHttp、Volley等；
+
 客户端的数据库存储方案可以为Realm、greenDao、OrmLite等；
+
 图片加载的方案可以是Fresco、Glide、Picasso、UIL等。
+
 #### 如何快速替换？
 先来描述一下需求，比如说，目前正在用的http请求是Volley，现在发现使用OkHttp来封装一套会更好。又比方说，目前正在用的数据存储方案是OrmLite，现在使用greenDao或者Realm会更好，在类似这些情况下，如何做到不修改Activity/Fragment/Presenter代码的情况下，把Volley的http请求实现更换成Okhttp的实现，把OrmLite更换成greenDao或者Realm？
 
